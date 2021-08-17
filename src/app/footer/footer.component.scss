@@ -1,0 +1,73 @@
+@import "../../assets/SCSS/variables.scss";
+
+footer
+{
+    background-color: #131924;
+    padding: 40px 0 0 0;
+    color: white;
+    .footer-body
+    {
+        padding: 40px 0;
+        .footer-p
+        {
+            margin: 20px 0;
+            color: #e0e0e0;
+            font: {
+                size: 14px;
+                family: $mainFont;
+            };
+        }
+        .footer-col
+        {
+            margin-bottom: 30px;
+        }
+        //style for footer head and links
+        .footer-title
+        {
+            font: {
+                size: 16px;
+                family: $secondFont;
+                weight: 500;
+            };
+            margin-bottom: 15px;
+        }
+        .footer-link
+        {
+            cursor: pointer;
+            font: {
+                size: 14px;
+                family: $mainFont;
+                weight: 500;
+            };
+            margin-bottom: 10px;
+            transition: 0.35s;
+            &:hover
+            {
+                color: $mainColor;
+            }
+        }
+    }
+    .footer-copyright
+    {
+        // background-color: violet;
+        padding: 30px 0;
+        text-align: center;
+        border-top: 1px solid rgba(47,128,237,0.3);
+        color: #e0e0e0;
+        font: {
+            size: 16px;
+            weight: 300;
+            family: "Courier New";
+        };
+        a
+        {
+            text-decoration: none;
+            color: dodgerblue;
+            transition: 0.2s;
+            &:hover
+            {
+                color: yellow;
+            }
+        }
+    }
+}

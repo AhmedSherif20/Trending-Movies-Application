@@ -1,0 +1,49 @@
+<section class="sign-form">
+    <div class="container">
+        <div class="sign-up">
+
+            <div class="logo">
+                <img src="../../../assets/images/logo.svg" alt="">
+            </div>
+
+            <form>
+                <div class="form-group">
+                  <input type="text" class="form-control w-100 valid" placeholder="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control w-100 valid" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control w-100" placeholder="Password" id="exampleInputPassword1">
+                </div>
+
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I agree to the <a href="">Privacy Policy</a></label>
+                </div>
+
+                <a type="submit" routerLink="/home">sign Up</a>
+            </form>
+
+            <span>or</span>
+
+            <div class="sign-media">
+                <a routerLink="/home" class="media facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a routerLink="/home" class="media twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a routerLink="/home" class="media google">
+                    <i class="fab fa-google"></i>
+                </a>
+            </div>
+
+            <p>already have an account? <button (click)="goSignIn()">Sign in!</button></p>
+
+
+        </div>
+    </div>
+</section>

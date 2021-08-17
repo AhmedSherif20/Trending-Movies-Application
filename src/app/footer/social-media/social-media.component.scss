@@ -1,0 +1,27 @@
+.social-media
+{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    width: fit-content;
+    transition: 0.3s;
+    max-width: 100%;
+
+    &:hover
+    {
+        img
+        {
+            opacity: 0.3;
+        }
+    }
+    img
+    {
+        margin-right: 25px;
+        transition: 0.3s;
+
+        &:hover
+        {
+            opacity: 1;
+        }
+    }
+}

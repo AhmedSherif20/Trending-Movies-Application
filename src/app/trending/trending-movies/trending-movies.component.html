@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="movies">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" *ngFor='let movie of allTrendingMovies'>
+                <div class="movie">
+                    <div class="movie-cover">
+                        <img [src]="imgPrefix+movie.poster_path" [alt]="movie.title" class="img-fluid">
+                    </div>
+                    <div class="movie-details">
+                        <div class="movie-rate">
+                            <p><i class="far fa-star"></i>{{movie.vote_average}}</p>
+                            <p>{{movie.original_language}}</p>
+                        </div>
+                          
+                        <div class="movie-anchor">
+                            <a [routerLink]="['/moviedetails', movie.id]"><i class="fas fa-info-circle"></i> More Details</a>
+                        </div>
+
+                        <div class="movie-title">
+                            <h4>{{movie.title}}</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

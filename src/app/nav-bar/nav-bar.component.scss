@@ -1,0 +1,146 @@
+@import "../../assets/SCSS/variables.scss";
+nav
+{
+    // style for all nav
+    background-color: #131720;
+    padding: 30px;
+    font-family: $mainFont;
+    transition: 10s linear ;
+
+    //style for nav toggle
+    .navbar-toggler
+    {
+        i
+        {
+            font-size: 35px;
+        }
+    }
+    .navbar-nav
+    {
+        width: 60%;
+        //style for nav anchors
+        .nav-link 
+        {
+            color: white;
+            font: 
+            {
+                size: 0.875rem;
+                weight: 500;
+            }
+            margin-right: 24px;
+            transition: 0.5s;
+
+            &:hover
+            {
+                color: $mainColor;
+            }
+        }
+        .nav-link.active
+        {
+            color: #2f80ed;
+            transition: 0.5s;
+        }
+
+    }
+    .navbar-activtes
+    {
+        width: 39%;
+        justify-content: center;
+        align-items: center;
+        .form-inline
+        {
+            input
+            {
+                background-color: #151f30;
+                outline: none;
+                border: 0;
+                border-radius: 10px;
+                color: white;
+                &::placeholder
+                {
+                    color: white;
+                    font: 
+                    {
+                        size: 0.875rem;
+                        weight: 500;
+                    }
+                    
+                }
+            }
+            label
+            {
+                color: #2f80ed;
+                cursor: pointer;
+                right: 5%;
+                transition: 0.2s;
+
+                &:hover
+                {
+                    color: white;
+                }
+            }
+        }
+        .nav-signin
+        {
+            a
+            {
+                transition: 0.2s;
+
+            }
+            &:hover
+            {
+                a
+                {
+                    color: #2f80ed;
+                }
+            }
+            a
+            {
+                color: white;
+                text-decoration: none;
+                font: {
+                    size: 0.9rem;
+                    weight: 500;
+                };
+            }
+            i
+            {
+                color:#2f80ed ;
+                font-size: 20px;
+                margin-left: 5px;
+
+            }
+        }
+    }
+}
+/* style while scroll */
+.nav-show
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .form-inline
+    {
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 991px){
+    .navbar-nav
+    {
+        margin: 0px auto 15px ;
+    }
+    .navbar-activtes
+    {
+        width: 75% !important;
+        flex-direction: column;
+        margin: auto;
+        .form-inline
+        {
+            margin-bottom: 20px;
+        }
+    }
+}

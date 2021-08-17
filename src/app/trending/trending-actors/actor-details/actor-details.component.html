@@ -1,0 +1,33 @@
+<div class="actor-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="actor-cover">
+                    <img [src]="imgPrefix+actorDetails.profile_path" [alt]="actorDetails.title" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="actor">
+
+                    <div class="actor-titles">
+                        <h1>{{actorDetails.name}}</h1>
+
+                    </div>
+
+                    <div class="actor-info">
+                        <p><span>Birthday:</span> {{actorDetails.birthday}}</p>   
+                        <p><span>Place Of birth:</span>{{actorDetails.place_of_birth}}</p>  
+                        <p><span>Actor Role:</span> {{actorDetails.known_for_department}}</p>                                               
+                    </div>
+
+                    <div class="actor-overview">
+                        <h5>Biography</h5>
+                        <p>{{actorDetails.biography}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,105 @@
+<header>
+    <div class="container">
+      <h3>Flix Tv</h3>
+      <h1>Trending <span>Movies</span>, TVs Shows, & More.</h1>
+      <p>
+        <a href="">Action</a>,
+        <a href="">Drama</a>,
+        <a href="">Romance</a>,
+        <a href="">Comedy</a>
+      </p>
+      <a   class="header-btn" (click)="getStartedBtn()">
+        <i class="fas fa-play mr-1"></i>
+        Get Started
+      </a>
+    </div>
+  </header>
+  <Section id="trendingMovies" class="trend">
+    <div class="container">
+      <h2>Top Trending Movies</h2>
+      <div class="movies">
+        <div class="row">
+          <div class="col-md-6 col-lg-3" *ngFor="let movie of trendingMovies">
+            <div class="movie">
+              <div class="movie-cover">
+                <img [src]="imgPrefix+movie.poster_path" [alt]="movie.title" class="img-fluid">
+              </div>
+              <div class="movie-details">
+                
+                <div class="movie-rate">
+                  <p><i class="far fa-star"></i>{{movie.vote_average}}</p>
+                  <p>{{movie.original_language}}</p>
+                </div>
+  
+                <div class="movie-title">
+                  <h4>{{movie.title}}</h4>
+                  <p>{{movie.release_date.split("-").slice(0,1)}}</p>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </Section>
+  <Section id="trendingTv" class="trend">
+    <div class="container">
+      <h2>Top Trending Tv Shows</h2>
+      <div class="movies">
+        <div class="row">
+          <div class="col-md-6 col-lg-3" *ngFor="let tv of trendingTv">
+            <div class="movie">
+              <div class="movie-cover">
+                <img [src]="imgPrefix+tv.poster_path" [alt]="tv.title" class="img-fluid">
+              </div>
+              <div class="movie-details">
+                
+                <div class="movie-rate">
+                  <p><i class="far fa-star"></i>{{tv.vote_average}}</p>
+                  <p>{{tv.original_language}}</p>
+                </div>
+  
+                <div class="movie-title">
+                  <h4>{{tv.name}}</h4>
+                  <p>{{tv.first_air_date.split("-").slice(0,1)}}</p>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </Section>
+  <Section id="trendingPerson" class="trend">
+    <div class="container">
+      <h2>Top Trending Actors</h2>
+      <div class="movies">
+        <div class="row">
+          <div class="col-md-6 col-lg-3" *ngFor="let person of trendingperson">
+            <div class="movie">
+              <div class="movie-cover">
+                <img [src]="imgPrefix+person.profile_path" [alt]="person.name" class="img-fluid">
+              </div>
+              <div class="movie-details">
+                
+                <div></div>
+  
+                <div class="movie-title">
+                  <h4>{{person.name}}</h4>
+                  <p>{{person.known_for_department}}</p>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </Section>
+  <app-small-plans></app-small-plans>
+  

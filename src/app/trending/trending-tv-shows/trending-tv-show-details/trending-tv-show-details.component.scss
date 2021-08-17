@@ -1,0 +1,109 @@
+@import "../../../../assets/SCSS/variables.scss";
+.tv-show-details
+{
+    padding: 48px 0;
+    .tv-show-cover
+    {
+        margin-bottom: 20px;
+        img
+        {
+            border-radius: 3px;
+        }
+    }
+    .tv-show
+    {
+        padding: 10px 5px;
+        .tv-show-titles
+        {
+            margin-bottom: 20px;
+            h1
+            {
+                color: white;
+                font-size: 50px;
+                font-weight: 600;
+                font-family: $mainFont;
+                margin-bottom: 0;
+            }
+            h4
+            {
+                color: #949cb0;
+                font-size: 22px;
+                font-family: $secondFont;
+
+            }
+        }
+        .tv-show-info
+        {
+            margin: 24px 0 36px;
+            p
+            {
+                color: $mainColor;
+                font: {
+                    size: 17px;
+                    family: $secondFont;
+                };
+                margin-bottom: 24px;
+                span
+                {
+                    color: white;
+                    font: {
+                        size: 18px;
+                        weight: 500;
+                        family: $mainFont;
+                    };
+                    margin-right: 6px;
+                    
+                }
+                
+            }
+        }
+        .tv-show-overview
+        {
+            h5
+            {
+                color: $mainColor;
+                font: {
+                    size: 24px;
+                    weight: 600;
+                    family: $mainFont;
+                };
+            }
+            p
+            {
+                width: 95%;
+                color: white;
+                font: {
+                    size: 18px;
+                    family: $secondFont;
+                };
+                line-height: 35px;
+            }
+        }
+        .tv-show-trailer
+        {
+            width: fit-content;
+            margin: 36px 0;
+            a
+            {
+                text-decoration: none;
+                text-transform: capitalize;
+                background-color: transparent;
+                padding: 12px 18px;
+                border: 1px solid $mainColor;
+                color: $mainColor;
+                font: {
+                    size: 18px;
+                    weight: 600;
+                    family: $mainFont;
+                };
+                transition: 0.4s;
+                border-radius: 3px;
+                &:hover
+                {
+                    background-color: $mainColor;
+                    color: white;
+                }
+            }
+        }
+    }
+}

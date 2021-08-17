@@ -1,0 +1,6 @@
+<section id="authentication">
+        <app-sign-in *ngIf="_AuthenticationService.signInShow"></app-sign-in>
+        <app-sign-up *ngIf="_AuthenticationService.signUpShow"></app-sign-up>
+        <app-forget-password *ngIf="_AuthenticationService.forgetPasswordShow"></app-forget-password>
+</section>
+

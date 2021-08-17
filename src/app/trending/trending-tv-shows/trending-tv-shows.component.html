@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="tv-shows">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" *ngFor='let tvShow of allTrendingTvShows'>
+                <div class="tvShow">
+                    <div class="tvShow-cover">
+                        <img [src]="imgPrefix+tvShow.poster_path" [alt]="tvShow.title" class="img-fluid">
+                    </div>
+                    <div class="tvShow-details">
+                        <div class="tvShow-rate">
+                            <p><i class="far fa-star"></i>{{tvShow.vote_average}}</p>
+                            <p>{{tvShow.original_language}}</p>
+                        </div>
+                          
+                        <div class="tvShow-anchor">
+                            <a [routerLink]="['/trendingtvshowdetails', tvShow.id]"><i class="fas fa-info-circle"></i> More Details</a>
+                        </div>
+
+                        <div class="tvShow-title">
+                            <h4>{{tvShow.name}}</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

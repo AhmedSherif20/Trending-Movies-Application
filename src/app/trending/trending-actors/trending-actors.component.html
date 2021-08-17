@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="actors">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" *ngFor='let actor of allTrendingActors'>
+                <div class="actor">
+                    <div class="actor-cover">
+                        <img [src]="imgPrefix+actor.profile_path" [alt]="actor.title" class="img-fluid">
+                    </div>
+                    <div class="actor-details">
+                        <div class="actor-rate">
+                            <p>{{actor.known_for_department}}</p>
+                        </div>
+                          
+                        <div class="actor-anchor">
+                            <a [routerLink]="['/actordetails', actor.id]"><i class="fas fa-info-circle"></i> More Details</a>
+                        </div>
+
+                        <div class="actor-title">
+                            <h4>{{actor.name}}</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

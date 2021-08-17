@@ -1,0 +1,98 @@
+@import "../../../assets/SCSS/variables.scss";
+.tv-shows
+{
+    padding: 48px 0;
+    margin-bottom: 48px;
+    .tvShow
+    {
+        position: relative;
+        margin-bottom: 48px;
+        overflow: hidden;
+        border-radius: 4px;
+        .tvShow-details
+        {
+            position: absolute;
+            top: 105%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: black, $alpha: 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            transition: 0.35s;
+            
+            .tvShow-rate
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+                width: 100%;
+                margin-top: 10px;
+                p
+                {
+                    margin: 0 ;
+                    background-color: #151f30 ;
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 500;
+                    i
+                    {
+                        color: $mainColor;
+                        margin-right: 6px;
+                    }
+                }
+                
+            }
+            .tvShow-anchor
+            {
+                a
+                {
+                    text-decoration: none;
+                    padding: 7px 12px;
+                    border: 3px solid white;
+                    color: white;
+                    font: {
+                        size: 18px;
+                        weight: 500;
+                        family: $secondFont
+                    };
+                    transition: 0.2s;
+                    &:hover
+                    {
+                        color: $mainColor;
+                        border-color: $mainColor;
+                        background-color: white;
+                        
+                    }
+                }
+            }
+            .tvShow-title
+            {
+                h4
+                {
+                    color: white;
+                    width: fit-content;
+                    margin: 0 auto 20px;
+                    padding: 0 10px;
+                    font: {
+                        weight: 600;
+                        family: $secondFont;
+                    };
+                }
+            }
+        }
+        &:hover
+        {
+            .tvShow-details
+            {
+                top: 0;
+            }
+        }
+    }
+    
+}

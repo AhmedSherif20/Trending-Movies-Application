@@ -1,0 +1,111 @@
+@import "../../assets/SCSS/variables.scss";
+header
+{
+    // background-color: tomato;
+    .trending-controls
+    {
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    h1
+    {
+        color: white;
+        background-color: #151F30;
+        width: fit-content;
+        padding: 7px 9px;
+        font: {
+            size: 34px;
+            width: 600;
+            family: $secondFont;
+        };
+        position: relative;
+        border-top-left-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        &::after
+        {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            border-width: 27px 27px 27px 27px;
+            border-style: solid;
+            border-color: transparent transparent #151F30 #151F30;
+                        
+
+        }
+
+    }
+    .btns
+    {
+        width: fit-content;
+        margin-left: auto;
+        padding: 10PX 0;
+        button
+        {
+            margin-left: 15px;
+            background-color: #151F30;
+            outline: none;
+            border: 1px solid $mainColor;
+            border-radius: 50px;
+            color: $mainColor;
+            padding: 10px 15px ;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $mainFont;
+            text-transform: uppercase;
+            transition: 0.2s;
+            &:hover
+            {
+                background-color: white;
+            }
+        }
+        button.active
+        {
+            background-color: white;
+        }
+    }
+    }
+}
+@media screen and (max-width: 991px) {
+    // .trending-controls
+    // {
+    //     justify-content: center;
+    //     align-items: center;
+
+    // }
+    h1
+    {
+        background-color: #151F30;
+        margin: 0 auto 40px ;
+        border-radius: 0 !important;
+        &::before
+        {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right:  100%;
+            border-width: 27px 27px 27px 27px;
+            border-style: solid;
+            border-color: transparent #151F30 #151F30 transparent;
+                        
+
+        }
+    }
+
+    .btns
+    {
+        margin: auto;
+        button
+        {
+            margin-left: 25px !important;
+        }
+
+    }
+    
+}

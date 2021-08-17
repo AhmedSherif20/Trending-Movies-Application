@@ -1,0 +1,37 @@
+<div class="tv-show-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tv-show-cover">
+                    <img [src]="imgPrefix+tvShowDetails.poster_path" [alt]="tvShowDetails.title" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tv-show">
+
+                    <div class="tv-show-titles">
+                        <h1>{{tvShowDetails.name}}</h1>
+                        <h4>{{tvShowDetails.tagline}}</h4>
+                    </div>
+
+                    <div class="tv-show-info">
+                        <p><span>Language:</span> {{tvShowDetails.original_language}}</p>            
+                        <p><span>Release Date:</span> {{tvShowDetails.last_air_date}}</p>            
+                        <p><span>Rate:</span> {{tvShowDetails.vote_average}}/10 <i class="fas fa-star text-warning ml-1 mr-2"></i> • &nbsp; {{tvShowDetails.vote_count}} Vote</p>            
+                        <p><span>Episodes:</span> {{tvShowDetails.number_of_episodes}}</p>  
+                        <p><span>Seasons:</span> {{tvShowDetails.number_of_seasons}}</p>  
+                    </div>
+
+                    <div class="tv-show-overview">
+                        <h5>Overview</h5>
+                        <p>{{tvShowDetails.overview}}</p>
+                    </div>
+                    
+                    <div class="tv-show-trailer">
+                        <a [href]="tvShowDetails.homepage" target="_blank">Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

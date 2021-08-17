@@ -1,0 +1,20 @@
+<header>
+    <div class="container">
+        <div class="row trending-controls px-2">
+            <div class="col-lg-3">
+                <h1>Categories</h1>
+            </div>
+            <div class="col-lg-6">
+                <div class="btns d-flex justify-content-end align-items-center">
+                    <button (click)="displayMovies()" [ngClass]="{'active':showMovies === true}" >Movies</button>
+                    <button (click)="displayTvShows()" [ngClass]="{'active':showTvShows === true}">Tv Shows</button>
+                    <button (click)="displayActors()" [ngClass]="{'active':showActors === true}">Actors</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<app-trending-movies *ngIf="showMovies"></app-trending-movies>
+<app-trending-tv-shows *ngIf="showTvShows"></app-trending-tv-shows>
+<app-trending-actors *ngIf="showActors"></app-trending-actors>
+<app-small-plans></app-small-plans>
