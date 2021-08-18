@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./booking.component.scss']
 })
 export class BookingComponent implements OnInit {
-
+  booked: boolean = false;
+  booking: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  bookedDone() {
+    this.booked = !this.booked
+    this.booking = !this.booking
   }
 
 }

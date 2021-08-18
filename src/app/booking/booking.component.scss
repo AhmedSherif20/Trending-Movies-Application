@@ -1,0 +1,133 @@
+@import "../../assets/SCSS/variables.scss";
+#booking
+{
+    // background-color: tan;
+    padding: 48px 0;
+    .section-title
+    {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        color: $mainColor;
+        margin-bottom: 40px;
+    }
+    form
+    {
+        background-color: #131720;
+        padding: 30px;
+        border-radius: 16px;
+        border: 3px solid #151f30;
+        label
+        {
+            color: $mainColor;
+            font: {
+                size: 14px;
+                weight: 500px;
+                family: $mainFont;
+            };
+        }
+        input, select, textarea
+        {
+            background-color: #151F30;
+            outline: none;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+        }
+        textarea
+        {
+            width: 100%;
+            min-height: 100px;
+            max-height: 100px;
+        }
+
+        a
+        {
+            cursor: pointer;
+            padding: 16px 34px;
+            border: 2px solid $mainColor;
+            border-radius: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $mainColor;
+            position: relative;
+            font-size: 18px;
+            transition: 0.25s;
+            font: {
+                family: $mainFont;
+                weight: 500;
+            };
+            &:hover
+            {
+                color: white;
+                background-color: $mainColor;
+            }
+        }
+        
+    }
+    .booked
+    {
+        background-color: #131720;
+        padding: 30px;
+        border-radius: 16px;
+        border: 3px solid #151f30;
+        h2
+        {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            color: $mainColor;
+            margin-bottom: 30px; 
+        }
+        p
+        {
+            font-family: $secondFont;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: $mainColor;
+        }
+    }
+    .book-info
+    {
+        padding: 12px 5px;
+        color: #FFF;
+
+        h2
+        {
+            font: {
+                size: 36px;
+                weight: 400;
+                family: $secondFont;
+            };
+            margin-bottom: 24px;
+            color: $mainColor;
+        }
+        p
+        {
+            font: {
+                size: 18px;
+                weight: 400;
+                family: $mainFont;
+            };
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        span
+        {
+            display: block;
+            font: {
+                size: 18px;
+                weight: 400;
+                family: $mainFont;
+            };
+            margin-bottom: 10px;
+            i
+            {
+                font-size: 20px;
+                color: $mainColor;
+                margin-right: 7px;
+            }
+        }
+    }
+}

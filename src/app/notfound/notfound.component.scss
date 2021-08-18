@@ -1,0 +1,56 @@
+@import "../../assets/SCSS/variables.scss";
+#notfound
+{
+    background: {
+        image: url(../../assets/images/signbg.jpg);
+        size: cover ;
+        position: center center;
+    };
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .notfound-content
+    {
+        width: fit-content;
+        padding: 50px;
+        border-radius: 16px;
+        background-color: #131720;
+        border: 1px solid #151f30;
+        margin: auto;
+        h1
+        {
+            color: #2f80ed;
+            line-height: 100%;
+            margin-bottom: 14px;
+            font: {
+                size: 120px;
+                weight: 500;
+                family: $secondFont;
+            };
+        }
+        p
+        {
+            color: #fff;
+            margin-bottom: 48px;
+        }
+        a
+        {
+            padding: 20px 60px;
+            border-radius: 18px;
+            background-color: #2f80ed;
+            font-size: 14px;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+            &:hover
+            {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}

@@ -1,1 +1,82 @@
-<p>booking works!</p>
+<section id="booking">
+    <div class="container">
+        <h2 class="section-title">Book your Ticket now!</h2>
+
+        <div class="row">
+          <div class="col-12 col-lg-7 col-xl-8">
+            <form *ngIf="booking">
+              <div class="form-row form-group">
+                <div class="col">
+                  <label for="name">Name :</label>
+                  <input type="text" class="form-control" placeholder="Your Name" id="name">
+                </div>
+                <div class="col">
+                  <label for="name">Email :</label>
+                  <input type="email" class="form-control" placeholder="Your Email" id="email">
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <label for="exampleInputEmail1">Movie Name :</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Movie name" aria-describedby="emailHelp">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Show Time :</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>10:30 AM</option>
+                  <option>01:15 PM</option>
+                  <option>04:00 PM</option>
+                  <option>06:45 PM</option>
+                  <option>09:30 PM</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Number of seats :</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+    
+              <div class="form-group mb-5">
+                <label for="exampleFormControlTextarea1">Your message :</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1"   placeholder="Send us any details you want"></textarea>
+              </div>
+
+              <a (click)="bookedDone()">submit</a>
+            </form>
+
+            <div class="booked" *ngIf="booked">
+              <h2>Booked Done</h2>
+              <p>tickets will be sent to your email !</p>
+              <p>Enjoy your watching</p>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-5 col-xl-4">
+            <div class="book-info">
+              <h2>Information</h2>
+              <p>It is a long fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+
+              <span ><i class="fas fa-phone-alt"></i> +1 809 234-56-78</span>
+              <span class="mb-4"><i class="fas fa-paper-plane"></i> support@flixtv.com</span>
+              <app-social-media></app-social-media>
+            </div>
+          </div>
+
+        </div>
+
+          
+    </div>
+</section>
