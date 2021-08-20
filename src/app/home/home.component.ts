@@ -21,8 +21,6 @@ export class HomeComponent implements OnInit {
       this.trendingTv = e.results.slice(2, 6);
     })
     _ShowsService.getTrendingShows("person").subscribe((e: any) => {
-      // use this code if api don't have photo cover
-      // this.trendingperson = e.results.slice(0, 1).concat(e.results.slice(4, 5)).concat(e.results.slice(7, 8)).concat(e.results.slice(14, 15));
       this.trendingperson = e.results.slice(0, 4)
     })
   }
