@@ -1,0 +1,1005 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>movie-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">movie-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home/home.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_Navbar" >_Navbar</a>
+                            </li>
+                            <li>
+                                <a href="#imgPrefix" >imgPrefix</a>
+                            </li>
+                            <li>
+                                <a href="#trendingMovies" >trendingMovies</a>
+                            </li>
+                            <li>
+                                <a href="#trendingperson" >trendingperson</a>
+                            </li>
+                            <li>
+                                <a href="#trendingTv" >trendingTv</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getStartedBtn" >getStartedBtn</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_ShowsService: <a href="../injectables/ShowsService.html" target="_self">ShowsService</a>, _Navbar: <a href="../injectables/NavbarService.html" target="_self">NavbarService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/home/home.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_ShowsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ShowsService.html" target="_self" >ShowsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_Navbar</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavbarService.html" target="_self" >NavbarService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStartedBtn"></a>
+                    <span class="name">
+                        <span ><b>getStartedBtn</b></span>
+                        <a href="#getStartedBtn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStartedBtn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/home/home.component.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/home/home.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_Navbar"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_Navbar</b></span>
+                        <a href="#_Navbar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavbarService.html" target="_self" >NavbarService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/home/home.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imgPrefix"></a>
+                    <span class="name">
+                        <span ><b>imgPrefix</b></span>
+                        <a href="#imgPrefix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;https://image.tmdb.org/t/p/w500&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/home/home.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trendingMovies"></a>
+                    <span class="name">
+                        <span ><b>trendingMovies</b></span>
+                        <a href="#trendingMovies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/home/home.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trendingperson"></a>
+                    <span class="name">
+                        <span ><b>trendingperson</b></span>
+                        <a href="#trendingperson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/home/home.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trendingTv"></a>
+                    <span class="name">
+                        <span ><b>trendingTv</b></span>
+                        <a href="#trendingTv"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/home/home.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HostListener, Component, OnInit } from &#x27;@angular/core&#x27;;
+import { NavbarService } from &#x27;../navbar.service&#x27;;
+import { ShowsService } from &#x27;../shows.service&#x27;;
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.scss&#x27;]
+})
+export class HomeComponent implements OnInit {
+
+  trendingMovies: any[] &#x3D; [];
+  trendingTv: any[] &#x3D; [];
+  trendingperson: any[] &#x3D; [];
+  imgPrefix: string &#x3D; &quot;https://image.tmdb.org/t/p/w500&quot;
+  constructor(private _ShowsService: ShowsService, public _Navbar: NavbarService) {
+
+    _ShowsService.getTrendingShows(&quot;movie&quot;).subscribe((e: any) &#x3D;&gt; {
+      this.trendingMovies &#x3D; e.results.slice(2, 6);
+    })
+    _ShowsService.getTrendingShows(&quot;tv&quot;).subscribe((e: any) &#x3D;&gt; {
+      this.trendingTv &#x3D; e.results.slice(2, 6);
+    })
+    _ShowsService.getTrendingShows(&quot;person&quot;).subscribe((e: any) &#x3D;&gt; {
+      this.trendingperson &#x3D; e.results.slice(0, 4)
+    })
+  }
+
+  ngOnInit(): void {
+    this._Navbar.show()
+  }
+  getStartedBtn() {
+    document.querySelector(&quot;#trendingMovies&quot;)?.scrollIntoView();
+  }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;header&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+      &lt;h3&gt;Flix Tv&lt;/h3&gt;
+      &lt;h1&gt;Trending &lt;span&gt;Movies&lt;/span&gt;, TVs Shows, &amp; More.&lt;/h1&gt;
+      &lt;p&gt;
+        &lt;a href&#x3D;&quot;&quot;&gt;Action&lt;/a&gt;,
+        &lt;a href&#x3D;&quot;&quot;&gt;Drama&lt;/a&gt;,
+        &lt;a href&#x3D;&quot;&quot;&gt;Romance&lt;/a&gt;,
+        &lt;a href&#x3D;&quot;&quot;&gt;Comedy&lt;/a&gt;
+      &lt;/p&gt;
+      &lt;a   class&#x3D;&quot;header-btn&quot; (click)&#x3D;&quot;getStartedBtn()&quot;&gt;
+        &lt;i class&#x3D;&quot;fas fa-play mr-1&quot;&gt;&lt;/i&gt;
+        Get Started
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;Section id&#x3D;&quot;trendingMovies&quot; class&#x3D;&quot;trend&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+      &lt;h2&gt;Top Trending Movies&lt;/h2&gt;
+      &lt;div class&#x3D;&quot;movies&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6 col-lg-3&quot; *ngFor&#x3D;&quot;let movie of trendingMovies&quot;&gt;
+            &lt;div class&#x3D;&quot;movie&quot;&gt;
+              &lt;div class&#x3D;&quot;movie-cover&quot;&gt;
+                &lt;img [src]&#x3D;&quot;imgPrefix+movie.poster_path&quot; [alt]&#x3D;&quot;movie.title&quot; class&#x3D;&quot;img-fluid&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;movie-details&quot;&gt;
+                
+                &lt;div class&#x3D;&quot;movie-rate&quot;&gt;
+                  &lt;p&gt;&lt;i class&#x3D;&quot;far fa-star&quot;&gt;&lt;/i&gt;{{movie.vote_average}}&lt;/p&gt;
+                  &lt;p&gt;{{movie.original_language}}&lt;/p&gt;
+                &lt;/div&gt;
+  
+                &lt;div class&#x3D;&quot;movie-title&quot;&gt;
+                  &lt;h4&gt;{{movie.title}}&lt;/h4&gt;
+                  &lt;p&gt;{{movie.release_date.split(&quot;-&quot;).slice(0,1)}}&lt;/p&gt;
+                &lt;/div&gt;
+  
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/Section&gt;
+  &lt;Section id&#x3D;&quot;trendingTv&quot; class&#x3D;&quot;trend&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+      &lt;h2&gt;Top Trending Tv Shows&lt;/h2&gt;
+      &lt;div class&#x3D;&quot;movies&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6 col-lg-3&quot; *ngFor&#x3D;&quot;let tv of trendingTv&quot;&gt;
+            &lt;div class&#x3D;&quot;movie&quot;&gt;
+              &lt;div class&#x3D;&quot;movie-cover&quot;&gt;
+                &lt;img [src]&#x3D;&quot;imgPrefix+tv.poster_path&quot; [alt]&#x3D;&quot;tv.title&quot; class&#x3D;&quot;img-fluid&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;movie-details&quot;&gt;
+                
+                &lt;div class&#x3D;&quot;movie-rate&quot;&gt;
+                  &lt;p&gt;&lt;i class&#x3D;&quot;far fa-star&quot;&gt;&lt;/i&gt;{{tv.vote_average}}&lt;/p&gt;
+                  &lt;p&gt;{{tv.original_language}}&lt;/p&gt;
+                &lt;/div&gt;
+  
+                &lt;div class&#x3D;&quot;movie-title&quot;&gt;
+                  &lt;h4&gt;{{tv.name}}&lt;/h4&gt;
+                  &lt;p&gt;{{tv.first_air_date.split(&quot;-&quot;).slice(0,1)}}&lt;/p&gt;
+                &lt;/div&gt;
+  
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/Section&gt;
+  &lt;Section id&#x3D;&quot;trendingPerson&quot; class&#x3D;&quot;trend&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+      &lt;h2&gt;Top Trending Actors&lt;/h2&gt;
+      &lt;div class&#x3D;&quot;movies&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-6 col-lg-3&quot; *ngFor&#x3D;&quot;let person of trendingperson&quot;&gt;
+            &lt;div class&#x3D;&quot;movie&quot;&gt;
+              &lt;div class&#x3D;&quot;movie-cover&quot;&gt;
+                &lt;img [src]&#x3D;&quot;imgPrefix+person.profile_path&quot; [alt]&#x3D;&quot;person.name&quot; class&#x3D;&quot;img-fluid&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;movie-details&quot;&gt;
+                
+                &lt;div&gt;&lt;/div&gt;
+  
+                &lt;div class&#x3D;&quot;movie-title&quot;&gt;
+                  &lt;h4&gt;{{person.name}}&lt;/h4&gt;
+                  &lt;p&gt;{{person.known_for_department}}&lt;/p&gt;
+                &lt;/div&gt;
+  
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/Section&gt;
+  &lt;app-small-plans&gt;&lt;/app-small-plans&gt;
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../assets/SCSS/variables.scss&quot;;
+/*__________________ start header __________________*/
+header
+{
+    font-family: $secondFont;
+    padding: 20px 0;
+    height: 85vh;
+    background: {
+        image: url(../../assets/images/header_logo.jpg);
+        size: cover;
+        position: center center;
+    };
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h3
+    {
+        color: $mainColor;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    h1
+    {
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        width: 55%;
+        span
+        {
+            color: $mainColor;
+        }
+    }
+    p
+    {
+        margin-bottom: 50px;
+        a
+        {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #e3dfdf;
+            margin-right: 5px;
+            transition: 0.2s;
+            &amp;:hover
+            {
+                color: $mainColor;
+            }
+        }
+    }
+    .header-btn
+    {
+        cursor: pointer;
+        padding: 16px 34px;
+        border: 2px solid $mainColor;
+        border-radius: 50px;
+        text-decoration: none;
+        color: $mainColor;
+        animation: upAndDown 1s infinite  alternate;
+        position: relative;
+        font-size: 18px;
+        transition: 0.25s;
+        &amp;:hover
+        {
+            color: white;
+            background-color: $mainColor;
+        }
+    }
+}
+@keyframes upAndDown{
+    0%{
+        top: 20px;
+    }
+    99%{
+        top: 0;
+    }
+}
+@media screen and (max-width: 575px) {
+    header
+    {
+        height: calc(100vh - 105px);
+        h1
+        {
+            width: 95%;
+            font-size: 45px;
+        }
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    header
+    {
+        height: calc(100vh - 105px);
+        h1
+        {
+            width: 95%;
+            font-size: 50px;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width:991px ){
+    header
+    {
+        height: calc(100vh - 105px);
+        h1
+        {
+            width: 95%;
+            font-size: 50px;
+        }
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1199px ){
+    header
+    {
+        height: calc(100vh - 105px);
+        h1
+        {
+            width: 60%;
+            font-size: 50px;
+        }
+    }
+}
+/*__________________ end header __________________*/
+
+
+/*__________________ style for every trend section __________________*/
+.trend
+{
+    background-color: #131720;
+    color: white;
+    padding: 100px 0;
+
+    h2
+    {
+        font-size: 42px;
+        margin: 24px auto 48px ;
+        width: fit-content;
+        padding: 15px 0;
+        transition: 0.3s;
+
+        position: relative;
+        &amp;::before
+        {
+            content: &quot;&quot;;
+            width: 50%;
+            height: 2px;
+            background-color: $mainColor;
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            transition: 0.25s;
+
+            
+        }
+        &amp;:hover
+        {
+            color: $mainColor;
+            &amp;::before
+            {
+                width: 75%;
+                left: 12.5%;
+            }
+        }
+
+    }
+}
+/*__________________ style for every trend section __________________*/
+
+/*__________________ style for trending movie section __________________*/
+.movies
+{
+    border-bottom: 1px solid rgba($color: white, $alpha: 0.1);
+    padding: 0 0 48px 0;
+}
+.movie
+{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 28px;
+    border-radius: 4px;
+    .movie-cover
+    {
+        img
+        {
+            max-width: 100%;
+            max-height: 100%;
+            transition: .5s;
+
+        }
+    }
+    .movie-details
+    {
+        background-color: rgba($color: black, $alpha: 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        transition: .3s;
+
+    }
+    .movie-rate
+    {
+        // background-color: turquoise;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        p
+        {
+            margin: 0 ;
+            background-color: #151f30 ;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            i
+            {
+                color: $mainColor;
+                margin-right: 4px;
+            }
+        }
+    }
+    .movie-title
+    {
+        background-color: rgba($color: black, $alpha: 0.7);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 12px;
+        color: $mainColor;
+        margin-bottom: 12px;
+        font-weight: 500;
+        h4
+        {
+
+            width: 75%;
+        }
+        p
+        {
+            margin: 0;
+        }
+    }
+    &amp;:hover
+    {
+        .movie-details
+        {
+            opacity: 1;
+        }
+        .movie-cover
+        {
+            img
+            {
+                transform: scale(1.1);
+
+            }
+        }
+    }
+}
+/*__________________ style for trending movie section __________________*/
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><header>    <div class="container">      <h3>Flix Tv</h3>      <h1>Trending <span>Movies</span>, TVs Shows, & More.</h1>      <p>        <a href="">Action</a>,        <a href="">Drama</a>,        <a href="">Romance</a>,        <a href="">Comedy</a>      </p>      <a   class="header-btn" (click)="getStartedBtn()">        <i class="fas fa-play mr-1"></i>        Get Started      </a>    </div>  </header>  <Section id="trendingMovies" class="trend">    <div class="container">      <h2>Top Trending Movies</h2>      <div class="movies">        <div class="row">          <div class="col-md-6 col-lg-3" *ngFor="let movie of trendingMovies">            <div class="movie">              <div class="movie-cover">                <img [src]="imgPrefix+movie.poster_path" [alt]="movie.title" class="img-fluid">              </div>              <div class="movie-details">                                <div class="movie-rate">                  <p><i class="far fa-star"></i>{{movie.vote_average}}</p>                  <p>{{movie.original_language}}</p>                </div>                  <div class="movie-title">                  <h4>{{movie.title}}</h4>                  <p>{{movie.release_date.split("-").slice(0,1)}}</p>                </div>                </div>            </div>          </div>        </div>      </div>          </div>  </Section>  <Section id="trendingTv" class="trend">    <div class="container">      <h2>Top Trending Tv Shows</h2>      <div class="movies">        <div class="row">          <div class="col-md-6 col-lg-3" *ngFor="let tv of trendingTv">            <div class="movie">              <div class="movie-cover">                <img [src]="imgPrefix+tv.poster_path" [alt]="tv.title" class="img-fluid">              </div>              <div class="movie-details">                                <div class="movie-rate">                  <p><i class="far fa-star"></i>{{tv.vote_average}}</p>                  <p>{{tv.original_language}}</p>                </div>                  <div class="movie-title">                  <h4>{{tv.name}}</h4>                  <p>{{tv.first_air_date.split("-").slice(0,1)}}</p>                </div>                </div>            </div>          </div>        </div>      </div>          </div>  </Section>  <Section id="trendingPerson" class="trend">    <div class="container">      <h2>Top Trending Actors</h2>      <div class="movies">        <div class="row">          <div class="col-md-6 col-lg-3" *ngFor="let person of trendingperson">            <div class="movie">              <div class="movie-cover">                <img [src]="imgPrefix+person.profile_path" [alt]="person.name" class="img-fluid">              </div>              <div class="movie-details">                                <div></div>                  <div class="movie-title">                  <h4>{{person.name}}</h4>                  <p>{{person.known_for_department}}</p>                </div>                </div>            </div>          </div>        </div>      </div>          </div>  </Section>  <app-small-plans></app-small-plans>  </div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'ActorDetailsComponent', 'selector': 'app-actor-details'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthenticationComponent', 'selector': 'app-authentication'},{'name': 'BookingComponent', 'selector': 'app-booking'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetPasswordComponent', 'selector': 'app-forget-password'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'MovieDetailsComponent', 'selector': 'app-movie-details'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NotfoundComponent', 'selector': 'app-notfound'},{'name': 'ScrollTopBtnComponent', 'selector': 'app-scroll-top-btn'},{'name': 'SignInComponent', 'selector': 'app-sign-in'},{'name': 'SignUpComponent', 'selector': 'app-sign-up'},{'name': 'SmallPlansComponent', 'selector': 'app-small-plans'},{'name': 'SocialMediaComponent', 'selector': 'app-social-media'},{'name': 'TrendingActorsComponent', 'selector': 'app-trending-actors'},{'name': 'TrendingComponent', 'selector': 'app-trending'},{'name': 'TrendingMoviesComponent', 'selector': 'app-trending-movies'},{'name': 'TrendingTvShowDetailsComponent', 'selector': 'app-trending-tv-show-details'},{'name': 'TrendingTvShowsComponent', 'selector': 'app-trending-tv-shows'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
